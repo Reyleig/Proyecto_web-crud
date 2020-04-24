@@ -51,7 +51,9 @@ if(@$_SESSION["name"] == ""){
           <li class="nav-item">
             <a class="nav-link" href="compra/VerCarta.php">Carrito</a>
           </li>
-      
+          <li class="nav-item">
+            <a class="nav-link" href="compra/pagos.php">Pagos</a>
+          </li>
           <li class="nav-item">
           <a class="nav-link" href="cerrarSesion.php"><b>Cerrar sesion</b></a>
           </li>
@@ -123,7 +125,7 @@ if(@$_SESSION["name"] == ""){
                <h4 class="card-title">
                <a href="#"><?php echo $row["name"]; ?></a>
                </h4>
-                  <h5><a href="#"><?php echo '$'.$row["price"].' COP'; ?></a>
+                  <h5><a href="#"><?php echo '$'.$row["price"].' USD'; ?></a>
                   </h5>
                   <p class="card-text"><a href="#"><?php echo $row["description"]; ?></a></p>
                   <a class="btn btn-success" href="compra/AccionCarta.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar a la Carta</a>
@@ -280,7 +282,7 @@ if(@$_SESSION["name"] == ""){
                <h4 class="card-title">
                <a href="#"><?php echo $row["name"]; ?></a>
                </h4>
-                  <h5><a href="#"><?php echo '$'.$row["price"].' COP'; ?></a>
+                  <h5><a href="#"><?php echo '$'.$row["price"].' USD'; ?></a>
                   </h5>
                   <p class="card-text"><a href="#"><?php echo $row["description"]; ?></a></p>
                   <a class="btn btn-success" href="compra/AccionCarta.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar a la Carta</a>
