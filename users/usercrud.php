@@ -30,12 +30,12 @@
     <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>name</th>
-                        <th>lastname</th>
-                        <th>email</th>
-                        <th>password</th>
-                        <th>phone</th>
-                        <th>address</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Corre</th>
+                        <th>Clave</th>
+                        <th>Telefono</th>
+                        <th>Direccion</th>
                         <th>Codigo ciudad</th>
                         <th>Acciones</th>
                     </tr>

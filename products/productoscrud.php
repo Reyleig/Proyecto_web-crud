@@ -28,10 +28,9 @@
     <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>name</th>
-                        <th>description</th>
-                        <th>Valor unidad</th>
-                       
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
                         <th>Acciones</th>
 
                     </tr>

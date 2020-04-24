@@ -21,7 +21,7 @@
     <div class="row">
     <div class="col-sm-8"><h2>Registrarse <b></b></h2></div>
     <div class="col-sm-4">
-	<a href="../index.php" class="btn btn-info addnew">
+	<a href="usercrud.php" class="btn btn-info addnew">
     <i class="fa fa-arrow-left"></i>Regresar</a>
     </div>
     </div>
