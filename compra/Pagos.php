@@ -96,14 +96,7 @@ $custRow = $query->fetch_assoc();
   
 <div class="container">
 <div class="panel panel-default">
-<div class="panel-heading"> 
 
-<ul class="nav nav-pills">
-  <li role="presentation"><a href="index.php">Inicio</a></li>
-  <li role="presentation"><a href="VerCarta.php">Ver Carta</a></li>
-  <li role="presentation" class="active"><a href="Pagos.php">Pagos</a></li>
-</ul>
-</div>
 
 <div class="panel-body">
     <h1>Vista previa de la Orden</h1>
