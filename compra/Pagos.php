@@ -21,6 +21,7 @@ $custRow = $query->fetch_assoc();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -38,6 +39,8 @@ $custRow = $query->fetch_assoc();
   <link href="../css/style2.css" rel="stylesheet">
   
     <title>View Cart - PHP Shopping Cart Tutorial</title>
+=======
+>>>>>>> e1573a0e91a40d8ff8aff2c5a8fc63e440b206c2
     <meta charset="utf-8">
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -151,7 +154,7 @@ $custRow = $query->fetch_assoc();
         <a href="AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
         </div>
-
+ <div class="panel-footer">Diseño Web</div>
  </div><!--Panek cierra-->
 </div>
 </body>
