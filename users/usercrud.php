@@ -48,7 +48,7 @@ $listado=$usuarios->read();
  <tbody>
 				<?php 
 					while ($row=mysqli_fetch_object($listado)){
-						$id=$row->id;
+						$id=$row->ids;
 						$name=$row->name;
 						$lastname=$row->lastname;
                         $email=$row->email;
