@@ -1,9 +1,9 @@
 <?php
 session_start();
 echo $_SESSION["name"];
-$_SESSION["email"]; 
-              $_SESSION["phone"]; 
-              $_SESSION["address"];
+echo $_SESSION["password"]; 
+echo $_SESSION["address"]; 
+$_SESSION["address"];
          
 ?>
    

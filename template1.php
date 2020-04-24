@@ -36,7 +36,7 @@ if(@$_SESSION["name"] == ""){
   <div class="margen">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><h1>Bienvenido <?php echo $_SESSION["name"]; ?> </h1></a>
+      <a class="navbar-brand" href="#"><h1>Bienvenido <?php echo $_SESSION["email"]; ?> </h1></a>
      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -128,7 +128,7 @@ if(@$_SESSION["name"] == ""){
                   <h5><a href="#"><?php echo '$'.$row["price"].' USD'; ?></a>
                   </h5>
                   <p class="card-text"><a href="#"><?php echo $row["description"]; ?></a></p>
-                  <a class="btn btn-success" href="../template1.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar a la Carta</a>
+                  <a class="btn btn-success" href="compra/AccionCarta.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar a la Carta</a>
                         
                 </div>
               </div>
