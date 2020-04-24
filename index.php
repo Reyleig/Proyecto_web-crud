@@ -41,7 +41,7 @@
           <label for="last_name">Password</label>
           <input class="margen btn" type='submit' value='Iniciar Sesion'>
         
-          <a href="users/create.php" class="margin2 bton  btn" type='submit'>Registrar</a>
+          <a href="createUser.php" class="margin2 bton  btn" type='submit'>Registrar</a>
        
           </div>
          
