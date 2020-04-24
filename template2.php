@@ -57,6 +57,7 @@ if(@$_SESSION["name"] == ""){
   </nav>
   </div>
   <!-- Page Content -->
+  <div>
   <div class="container">
 
 <div class="row">
@@ -71,6 +72,8 @@ if(@$_SESSION["name"] == ""){
     </div>
 
   </div>
+  <div>
+
       <!-- /.col-lg-3 -->
 
  
@@ -89,13 +92,14 @@ if(@$_SESSION["name"] == ""){
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <div class="margenn">
+  <footer class="py-5  bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Fundamentos Web</p>
     </div>
     <!-- /.container -->
   </footer>
-
+  </div>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

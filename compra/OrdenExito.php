@@ -20,7 +20,7 @@ if(!isset($_REQUEST['id'])){
 <div class="panel-heading"> 
 
 <ul class="nav nav-pills">
-  <li role="presentation"><a href="index.php">Inicio</a></li>
+  <li role="presentation"><a href="../template1.php">Inicio</a></li>
 </ul>
 </div>
 
