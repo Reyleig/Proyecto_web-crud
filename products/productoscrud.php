@@ -20,7 +20,7 @@
                     <div class="col-sm-8"><h2><b>Inventario</b></h2></div>
                     <div class="col-sm-4">
                         <a href="create.php" class="btn btn-info add-new"><i class="fa fa-plus"></i> Agregar Producto</a>
-                        <a href="../template1.php" class="btn btn-info add-new"><i class=""></i> Regresar a Tienda</a>
+                        <a href="../template2.php" class="btn btn-info add-new"><i class=""></i> Regresar a Tienda</a>
                     </div>
                 </div>
             </div>
