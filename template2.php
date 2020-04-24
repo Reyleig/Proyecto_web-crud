@@ -9,7 +9,7 @@ if(@$_SESSION["name"] == ""){
   echo "No podras hackaearme";
 }else{
   
-  if(@$_SESSION["rol"] == 1){
+  if(@$_SESSION["rol"] == 0){
 ?>
 <html lang="en">
 
@@ -189,7 +189,7 @@ if(@$_SESSION["name"] == ""){
   <div class="margen">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><h1>Bienvenido <?php echo $_SESSION["nombre"]; ?> </h1></a>
+      <a class="navbar-brand" href="#"><h1>Bienvenido <?php echo $_SESSION["name"]; ?> </h1></a>
      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
