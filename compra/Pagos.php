@@ -21,7 +21,6 @@ $custRow = $query->fetch_assoc();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pagos - PHP Carrito de compras Tutorial</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -95,7 +94,7 @@ $custRow = $query->fetch_assoc();
         <a href="AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
         </div>
- <div class="panel-footer">BaulPHP</div>
+ <div class="panel-footer">Diseño Web</div>
  </div><!--Panek cierra-->
 </div>
 </body>

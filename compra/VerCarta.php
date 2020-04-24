@@ -123,7 +123,7 @@ $cart = new Cart;
     </table>
     
     </div>
- <div class="panel-footer">BaulPHP</div>
+ <div class="panel-footer">Diseño Web</div>
  </div><!--Panek cierra-->
  
 </div>

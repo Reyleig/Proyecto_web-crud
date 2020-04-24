@@ -7,7 +7,6 @@ if(!isset($_REQUEST['id'])){
 <html lang="en">
 <head>
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>Orden Completado - PHP Carrito de Compras</title>
     <meta charset="utf-8">
     <style>
     .container{padding: 20px;}
