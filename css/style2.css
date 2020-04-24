@@ -1,0 +1,35 @@
+.margen{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.borde{
+    border-radius: 1px;
+    border-color: black;
+
+}
+.bton{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.margin2{
+    
+    display: flex;
+    margin-left: 50px;
+    margin-right: 150px;
+    margin-top: 50px;
+    padding-left: 265px;
+    padding-right: 200px;
+    width: 615px;
+    
+}
+.borde{
+    border-radius: 1px;
+    border-color: black;
+
+}
