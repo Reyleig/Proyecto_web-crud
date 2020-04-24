@@ -22,7 +22,7 @@ session_start();
               if($fila["id_roles"] == 1){
                 header("location:template1.php");
                 exit();
-              }else if($fila["id_roles"] == 2){
+              }else if($fila["id_roles"] == 0){
                 header("location:template2.php");
                 exit();
               }

@@ -51,9 +51,7 @@ if(@$_SESSION["name"] == ""){
           <li class="nav-item">
             <a class="nav-link" href="compra/VerCarta.php">Carrito</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="compra/pagos.php">Pagos</a>
-          </li>
+      
           <li class="nav-item">
           <a class="nav-link" href="cerrarSesion.php"><b>Cerrar sesion</b></a>
           </li>
@@ -70,11 +68,7 @@ if(@$_SESSION["name"] == ""){
       <div class="col-lg-3">
 
         <h1 class="my-4">Tecno Place</h1>
-        <div class="list-group">
-          <a href="products/productoscrud.php" class="list-group-item">Administrar Productos</a>
-          <a href="users/usercrud.php" class="list-group-item">Administrar Usuarios</a>
-          
-        </div>
+        
 
       </div>
       <!-- /.col-lg-3 -->
@@ -128,7 +122,7 @@ if(@$_SESSION["name"] == ""){
                   <h5><a href="#"><?php echo '$'.$row["price"].' COP'; ?></a>
                   </h5>
                   <p class="card-text"><a href="#"><?php echo $row["description"]; ?></a></p>
-                  <a class="btn btn-success" href="../template1.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar a la Carta</a>
+                  <a class="btn btn-success" href="compra/AccionCarta.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar a la Carta</a>
                         
                 </div>
               </div>
