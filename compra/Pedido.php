@@ -75,14 +75,6 @@ $custRow = $query->fetch_assoc();
             <a class="nav-link" href="../template1.php">Home
             </a>
           </li> 
-          <li class="nav-item ">
-            <a class="nav-link" href="VerCarta.php">Carrito</a>
-            <span class="sr-only">(current)</span>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="Pagos.php">Pago
-            </a>
-          </li>
           <li class="nav-item">
           <a class="nav-link" href="../cerrarSesion.php"><b>Cerrar sesion</b></a>
           </li>
@@ -97,15 +89,14 @@ $custRow = $query->fetch_assoc();
 
 <ul class="nav nav-pills">
   <li role="presentation"><a href="index.php">Inicio</a></li>
-  <li role="presentation"><a href="VerCarta.php">Ver Carta</a></li>
-  <li role="presentation" class="active"><a href="Pagos.php">Pagos</a></li>
+  
 </ul>
 </div>
 
 </div>
 <div class="margen"></div>
 <div class="panel-body">
-    <h1>Vista previa de la Orden</h1>
+<h1><b>Pedido Realizado</b></h1>
     <table class="table">
     <thead>
         <tr>
@@ -141,16 +132,9 @@ $custRow = $query->fetch_assoc();
         </tr>
     </tfoot>
     </table>
-    <div class="shipAddr">
-        <h4>Detalles de envío</h4>
-        <p><?php echo $custRow["name"]; ?></p>
-        <p><?php echo $custRow["email"]; ?></p>
-        <p><?php echo $custRow["phone"]; ?></p>
-        <p><?php echo $custRow["address"]; ?></p>
-    </div>
+    
     <div class="footBtn">
         <a href="../template1.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
-        <a href="Pedido.php" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
         </div>
 
