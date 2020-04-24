@@ -143,10 +143,10 @@ $custRow = $query->fetch_assoc();
     </table>
     <div class="shipAddr">
         <h4>Detalles de envío</h4>
-        <p><?php echo @$_SESSION["name"]; ?></p>
-        <p><?php echo @$_SESSION["email"]; ?></p>
-        <p><?php echo @$_SESSION["phone"]; ?></p>
-        <p><?php echo @$_SESSION["address"]; ?></p>
+        <p><?php echo $custRow["name"]; ?></p>
+        <p><?php echo $custRow["email"]; ?></p>
+        <p><?php echo $custRow["phone"]; ?></p>
+        <p><?php echo $custRow["address"]; ?></p>
     </div>
     <div class="footBtn">
         <a href="../template1.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>

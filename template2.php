@@ -9,7 +9,7 @@ if(@$_SESSION["name"] == ""){
   echo "No podras hackaearme";
 }else{
   
-  if(@$_SESSION["rol"] == 1){
+  if(@$_SESSION["rol"] == 0){
 ?>
 <html lang="en">
 
