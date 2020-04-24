@@ -23,7 +23,6 @@ $cart = new Cart;
   <link href="../css/shop-homepage.css" rel="stylesheet">
   <link href="../css/style2.css" rel="stylesheet">
   
-    <title>View Cart - PHP Shopping Cart Tutorial</title>
     <meta charset="utf-8">
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -66,7 +65,7 @@ $cart = new Cart;
           </li>
 
           <li class="nav-item">
-          <a class="nav-link" href="cerrarSesion.php"><b>Cerrar sesion</b></a>
+          <a class="nav-link" href="../cerrarSesion.php"><b>Cerrar sesion</b></a>
           </li>
         </ul>
       </div>
