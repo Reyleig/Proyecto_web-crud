@@ -67,27 +67,27 @@
 			<div class="row">
 				<form method="post">
 				<div class="col-md-6">
-					<label>name:</label>
+					<label>Nombre:</label>
 					<input type="text" name="name" id="name" class='form-control' maxlength="100" required  value="<?php echo $datos_usuarios->name;?>">
 				</div>
 				<div class="col-md-6">
-					<label>lastname:</label>
+					<label>Apellido:</label>
 					<input type="text" name="lastname" id="lastname" class='form-control' maxlength="100" required value="<?php echo $datos_usuarios->lastname;?>">
 				</div>
 				<div class="col-md-12">
-					<label>email:</label>
+					<label>Corre:</label>
 					<input type="email" name="email" id="email" class='form-control' maxlength="15" required value="<?php echo $datos_usuarios->email;?>">
 				</div>
 				<div class="col-md-6">
-					<label>password:</label>
+					<label>Clave:</label>
 					<input type="text" name="password" id="password" class='form-control' maxlength="15" required value="<?php echo $datos_usuarios->password;?>">
 				</div>
 				<div class="col-md-6">
-					<label>phone:</label>
+					<label>Telefono:</label>
 					<input type="text" name="phone" id="phone" class='form-control' maxlength="64" required value="<?php echo $datos_usuarios->phone;?>">
 				</div>
 				<div class="col-md-6">
-					<label>address:</label>
+					<label>Direccion:</label>
 					<input type="text" name="address" id="address" class='form-control' maxlength="100" required value="<?php echo $datos_usuarios->address;?>">
 				</div>
 				<div class="col-md-6">

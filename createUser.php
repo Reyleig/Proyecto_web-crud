@@ -57,7 +57,7 @@
 					<label>Ciudad:</label>
 					<select name='id_ciudad'>
         <?php
-          include ("conexion_select.php");
+          include ("users/conexion_select.php");
           $sql = "Select * from ciudad";
           $resultado = mysqli_query($mysqli, $sql);
           if (!$resultado) {

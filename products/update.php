@@ -61,15 +61,15 @@
 			<div class="row">
 				<form method="post">
 				<div class="col-md-6">
-					<label>name:</label>
+					<label>Nombre:</label>
 					<input type="text" name="name" id="name" class='form-control' maxlength="100" required  value="<?php echo $datos_productos->name;?>">
 				</div>
 				<div class="col-md-6">
-					<label>description:</label>
+					<label>Descripcion:</label>
 					<input type="text" name="description" id="description" class='form-control' maxlength="100" required value="<?php echo $datos_productos->description;?>">
 				</div>
 				<div class="col-md-12">
-					<label>Valor Unidad:</label>
+					<label>Precio:</label>
 					<input type="text" name="price" id="price" class='form-control' maxlength="15" required value="<?php echo $datos_productos->price;?>">
 				</div>
 				

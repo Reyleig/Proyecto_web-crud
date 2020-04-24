@@ -29,15 +29,15 @@
 				<form method="post">
 				
 				<div class="col-md-6">
-					<label>name:</label>
+					<label>Nombre:</label>
 					<input type="text" name="name" id="name" class='form-control' maxlength="100" required >
 				</div>
 				<div class="col-md-6">
-					<label>description:</label>
+					<label>Descripcion:</label>
 					<input type="text" name="description" id="description" class='form-control' maxlength="100" required>
 				</div>
 				<div class="col-md-6">
-					<label>Valor unidad:</label>
+					<label>Precio:</label>
 					<input type="text" name="price" id="price" class='form-control' maxlength="11" required>
 				</div>
 				
