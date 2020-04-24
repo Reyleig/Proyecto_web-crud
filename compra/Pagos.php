@@ -8,7 +8,7 @@ $cart = new Cart;
 
 // redirect to home if cart is empty
 if($cart->total_items() <= 0){
-    header("Location: index.php");
+    header("Location: ../template1.php");
 }
 
 // set customer ID in session
@@ -21,7 +21,6 @@ $custRow = $query->fetch_assoc();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -39,8 +38,6 @@ $custRow = $query->fetch_assoc();
   <link href="../css/style2.css" rel="stylesheet">
   
     <title>View Cart - PHP Shopping Cart Tutorial</title>
-=======
->>>>>>> e1573a0e91a40d8ff8aff2c5a8fc63e440b206c2
     <meta charset="utf-8">
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -78,11 +75,11 @@ $custRow = $query->fetch_assoc();
             <a class="nav-link" href="../template1.php">Home
             </a>
           </li> 
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="VerCarta.php">Carrito</a>
             <span class="sr-only">(current)</span>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="Pagos.php">Pago
             </a>
           </li>
@@ -98,13 +95,9 @@ $custRow = $query->fetch_assoc();
 <div class="panel panel-default">
 <div class="panel-heading"> 
 
-<ul class="nav nav-pills">
-  <li role="presentation"><a href="index.php">Inicio</a></li>
-  <li role="presentation"><a href="VerCarta.php">Ver Carta</a></li>
-  <li role="presentation" class="active"><a href="Pagos.php">Pagos</a></li>
-</ul>
-</div>
 
+</div>
+<div class="margen"></div>
 <div class="panel-body">
     <h1>Vista previa de la Orden</h1>
     <table class="table">
