@@ -18,6 +18,8 @@ session_start();
               $_SESSION["id"] = $fila["id"];
               $_SESSION["rol"] = $fila["id_roles"];
               $_SESSION["email"] = $fila["email"];
+              $_SESSION["phone"] = $fila["phone"];
+              $_SESSION["address"] = $fila["address"];
         
               
 
