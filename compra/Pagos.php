@@ -21,12 +21,43 @@ $custRow = $query->fetch_assoc();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <style>
+   
+    input[type="number"]{width: 20%;}
+    </style>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+  <link href="../css/style2.css" rel="stylesheet">
+  
+    <title>View Cart - PHP Shopping Cart Tutorial</title>
+=======
+>>>>>>> e1573a0e91a40d8ff8aff2c5a8fc63e440b206c2
     <meta charset="utf-8">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script>
+    function updateCartItem(obj,id){
+        $.get("cartAction.php", {action:"updateCartItem", id:id, qty:obj.value}, function(data){
+            if(data == 'ok'){
+                location.reload();
+            }else{
+                alert('Cart update failed, please try again.');
+            }
+        });
+    }
+    </script>
     <style>
-    .container{padding: 20px;}
+    
     .table{width: 65%;float: left;}
     .shipAddr{width: 30%;float: left;margin-left: 30px;}
     .footBtn{width: 95%;float: left;}
@@ -34,6 +65,35 @@ $custRow = $query->fetch_assoc();
     </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><h1>Bienvenido <?php echo $_SESSION["name"]; ?> </h1></a>
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="../template1.php">Home
+            </a>
+          </li> 
+          <li class="nav-item active">
+            <a class="nav-link" href="VerCarta.php">Carrito</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="Pagos.php">Pago
+            </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="cerrarSesion.php"><b>Cerrar sesion</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
 <div class="container">
 <div class="panel panel-default">
 <div class="panel-heading"> 
@@ -84,13 +144,13 @@ $custRow = $query->fetch_assoc();
     </table>
     <div class="shipAddr">
         <h4>Detalles de envío</h4>
-        <p><?php echo $custRow['name']; ?></p>
-        <p><?php echo $custRow['email']; ?></p>
-        <p><?php echo $custRow['phone']; ?></p>
-        <p><?php echo $custRow['address']; ?></p>
+        <p><?php echo @$_SESSION["name"]; ?></p>
+        <p><?php echo @$_SESSION["email"]; ?></p>
+        <p><?php echo @$_SESSION["phone"]; ?></p>
+        <p><?php echo @$_SESSION["address"]; ?></p>
     </div>
     <div class="footBtn">
-        <a href="index.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
+        <a href="../template1.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
         <a href="AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
         </div>

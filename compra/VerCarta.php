@@ -55,15 +55,16 @@ $cart = new Cart;
         <ul class="navbar-nav ml-auto">
           <li class="nav-item ">
             <a class="nav-link" href="../template1.php">Home
-              
             </a>
-          </li>
-         
+          </li> 
           <li class="nav-item active">
             <a class="nav-link" href="VerCarta.php">Carrito</a>
             <span class="sr-only">(current)</span>
           </li>
-
+          <li class="nav-item ">
+            <a class="nav-link" href="Pagos.php">Pago
+            </a>
+          </li>
           <li class="nav-item">
           <a class="nav-link" href="../cerrarSesion.php"><b>Cerrar sesion</b></a>
           </li>

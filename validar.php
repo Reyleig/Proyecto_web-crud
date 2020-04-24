@@ -17,6 +17,7 @@ session_start();
               $_SESSION["name"] = $fila["name"];
               $_SESSION["id"] = $fila["id"];
               $_SESSION["rol"] = $fila["id_roles"];
+              
 
               if($fila["id_roles"] == 1){
                 header("location:template1.php");
