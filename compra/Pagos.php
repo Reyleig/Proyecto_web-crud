@@ -84,7 +84,7 @@ $custRow = $query->fetch_assoc();
             </a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="cerrarSesion.php"><b>Cerrar sesion</b></a>
+          <a class="nav-link" href="../cerrarSesion.php"><b>Cerrar sesion</b></a>
           </li>
         </ul>
       </div>
