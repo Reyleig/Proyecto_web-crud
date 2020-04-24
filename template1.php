@@ -11,8 +11,6 @@ if(@$_SESSION["name"] == ""){
   
   if(@$_SESSION["rol"] == 1){
 ?>
-
-
 <html lang="en">
 
 <head>
