@@ -18,15 +18,14 @@ session_start();
               $_SESSION["id"] = $fila["id"];
               $_SESSION["rol"] = $fila["id_roles"];
               $_SESSION["email"] = $fila["email"];
-              $_SESSION["id"] = $fila["id"];
-              $_SESSION["rol"] = $fila["id_roles"];
+        
               
 
               if($fila["id_roles"] == 1){
-                header("location:template1.php");
+                header("location:template2.php");
                 exit();
               }else if($fila["id_roles"] == 0){
-                header("location:template2.php");
+                header("location:template1.php");
                 exit();
               }
           } 
