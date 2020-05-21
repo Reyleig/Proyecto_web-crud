@@ -70,6 +70,7 @@ if(@$_SESSION["name"] == ""){
       <div class="col-lg-3">
 
         <h1 class="my-4">Tecno Place</h1>
+        <a href="reportes/index.php"><b>Reporte de Productos</b></a>
 
 
       </div>
