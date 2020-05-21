@@ -91,16 +91,9 @@ if(@$_SESSION["name"] == ""){
   </div>
   <!-- /.container -->
   <div>
+ 
   </div>
-  <div>
-  </div>
-  <div>
-  </div>
-  <div>
-  </div>
-  <div>
-  </div>
-  <div>
+  
   
   <div class="margenn">
   <footer class="py-5  bg-dark">
