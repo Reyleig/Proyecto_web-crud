@@ -32,9 +32,9 @@ $custRow = $query->fetch_assoc();
     foreach($cartItems as $item){
     $productos = $productos." ".$item["name"];
     }
-}
+    }
 
-    $plantilla = "<h1>Gracias por su compra ".$nombre." ".$apellido." </h1> Su Pedido se a realizado con exito por un total de:".$cart->total()." Con los productos ".$productos;
+    $plantilla = "<h1>Gracias por su compra ".$nombre." ".$apellido." </h1> Su Pedido se a realizado con exito por un total de: $".$cart->total()." COP"." Con los productos ".$productos;
 
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
