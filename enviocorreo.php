@@ -1,15 +1,39 @@
 <?php
+// include database configuration file
+include 'config/Configuracion.php';
+
+// initializ shopping cart class
+include 'config/La-carta.php';
+$cart = new Cart;
+
+// set customer ID in session
+$_SESSION['sessCustomerID'] = 1;
+
+// get customer details by session customer ID
+$query = $db->query("SELECT * FROM clientes WHERE id = ".$_SESSION['sessCustomerID']);
+$custRow = $query->fetch_assoc();
+
+$cartItems = $cart->contents();
+foreach($cartItems as $item){
+?>
+<tr>
+<td><?php $articulos= $item["name"]; ?></td>
+</tr>
+ }<?php
+
     require 'src/Exception.php';
     require 'src/PHPMailer.php';
     require 'src/SMTP.php';
-    session_start();
+    
     $correoDesde = "revampedyreileigh@gmail.com";
     $clave = "owvwwwqitaqfrlmt";
 
     $para = $_POST["para"];
-   // $mensaje = $_POST["mensaje"];
+   $nombre = $_SESSION["name"];
+   $apellido= $_SESSION["lastname"];
+ 
 
-    $plantilla = "<h1>Bienvenido ".$para." </h1> Este es su mensaje : ";
+    $plantilla = "<h1>Gracias por su compra ".$nombre." ".$apellido." </h1> Su Pedido se a realizado con exito por un total de:".$cart->total().$articulos;
 
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
