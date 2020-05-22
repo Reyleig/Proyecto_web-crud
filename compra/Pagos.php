@@ -148,11 +148,14 @@ $custRow = $query->fetch_assoc();
         <p><?php echo $_SESSION["phone"]; ?></p>
         <p><?php echo $_SESSION["address"]; ?></p>
     </div>
+    <form action='../enviocorreo.php' method='POST'>
     <div class="footBtn">
+        <input hidden type='text' value='<?php echo $_SESSION["email"]; ?>' name='para'>
         <a href="../template1.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
-        <a href="Pedido.php" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
+        <input type='submit' value='Realizar pedido' class="btn btn-success orderBtn">
     </div>
-        </div>
+    </form>
+
 
  </div><!--Panek cierra-->
 </div>
