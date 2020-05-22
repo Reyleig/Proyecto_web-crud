@@ -25,7 +25,7 @@ $custRow = $query->fetch_assoc();
    $email = $_SESSION["email"];
    $nombre = $_SESSION["name"];
    $apellido= $_SESSION["lastname"];
- $productos = "";
+   $productos = "";
 
    if($cart->total_items() > 0){
     $cartItems = $cart->contents();
@@ -73,6 +73,7 @@ $custRow = $query->fetch_assoc();
     }
     
 ?>
+
 <script> 
 document.location.href = "compra/Pedido.php";
 </script> 
