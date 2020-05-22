@@ -90,11 +90,17 @@ if(@$_SESSION["name"] == ""){
 
   </div>
   <!-- /.container -->
-
-  <!-- Footer -->
+  <div>
+ 
+  </div>
+  
+  
   <div class="margenn">
   <footer class="py-5  bg-dark">
+  
     <div class="container">
+    <div>
+  
       <p class="m-0 text-center text-white">Copyright &copy; Fundamentos Web</p>
     </div>
     <!-- /.container -->
