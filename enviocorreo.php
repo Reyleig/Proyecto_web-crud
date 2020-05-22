@@ -21,7 +21,7 @@ $custRow = $query->fetch_assoc();
     $correoDesde = "revampedyreileigh@gmail.com";
     $clave = "owvwwwqitaqfrlmt";
 
-   //$para = $_POST["para"];
+   
    $email = $_SESSION["email"];
    $nombre = $_SESSION["name"];
    $apellido= $_SESSION["lastname"];
