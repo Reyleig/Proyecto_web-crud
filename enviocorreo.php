@@ -15,11 +15,9 @@ $custRow = $query->fetch_assoc();
 
 $cartItems = $cart->contents();
 foreach($cartItems as $item){
-?>
-<tr>
-<td><?php $articulos= $item["name"]; ?></td>
-</tr>
- }<?php
+
+ $articulos= $item["name"];
+
 
     require 'src/Exception.php';
     require 'src/PHPMailer.php';
