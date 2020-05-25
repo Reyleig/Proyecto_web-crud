@@ -14,7 +14,7 @@ $query = $db->query("SELECT * FROM clientes WHERE id = ".$_SESSION['sessCustomer
 $custRow = $query->fetch_assoc();
 
 $cartItems = $cart->contents();
-foreach($cartItems as $item){
+foreach($cartItems as $item);
 
  $articulos= $item["name"];
 
@@ -62,6 +62,7 @@ foreach($cartItems as $item){
         $mail->AltBody =  $plantilla;
         $mail->send();
 
+        
         
         header("location:compra/Pedido.php");
         
