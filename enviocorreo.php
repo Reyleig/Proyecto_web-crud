@@ -26,18 +26,26 @@ foreach($cartItems as $item);
     $correoDesde = "revampedyreileigh@gmail.com";
     $clave = "owvwwwqitaqfrlmt";
 
-    $para = $_POST["para"];
+   
+   $email = $_SESSION["email"];
    $nombre = $_SESSION["name"];
    $apellido= $_SESSION["lastname"];
- 
+   $productos = "";
 
-    $plantilla = "<h1>Gracias por su compra ".$nombre." ".$apellido." </h1> Su Pedido se a realizado con exito por un total de:".$cart->total().$articulos;
+   if($cart->total_items() > 0){
+    $cartItems = $cart->contents();
+    foreach($cartItems as $item){
+    $productos = $productos." ".$item["name"];
+    }
+    }
+
+    $plantilla = "<h1>Gracias por su compra ".$nombre." ".$apellido." </h1> Su Pedido se a realizado con exito por un total de: $".$cart->total()." COP"." Con los productos ".$productos;
 
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
     try {
         //Server settings
-        $mail->SMTPDebug = 2;                                       // Enable verbose debug output
+        $mail->SMTPDebug = 0;                                       // Enable verbose debug output
         $mail->isSMTP();                                            // Set mailer to use SMTP
         $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
@@ -53,7 +61,7 @@ foreach($cartItems as $item);
         $mail->setFrom( $correoDesde, $correoDesde); 
         
         //La siguiente linea, se repite N cantidad de veces como destinarios tenga
-        $mail->addAddress($para, $para);     // Add a recipient
+        $mail->addAddress($email, $email);     // Add a recipient
    
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
@@ -64,10 +72,13 @@ foreach($cartItems as $item);
 
         
         
-        header("location:compra/Pedido.php");
         
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
     
 ?>
+
+<script> 
+document.location.href = "compra/Pedido.php";
+</script> 
