@@ -96,7 +96,7 @@ $custRow = $query->fetch_assoc();
 </div>
 <div class="margen"></div>
 <div class="panel-body">
-<h1><b>Pedido Realizado</b></h1>
+<h1><b>Pedido Realizado a </b></h1>
     <table class="table">
     <thead>
         <tr>
@@ -122,6 +122,24 @@ $custRow = $query->fetch_assoc();
         <?php } }else{ ?>
         <tr><td colspan="4"><p>No hay articulos en tu carta......</p></td>
         <?php } ?>
+
+        <?php
+//segun yo esto hace la consulta e ingresa los datos
+	$email = $_SESSION["email"];
+  $nombre = $_SESSION["name"];
+  $apellido= $_SESSION["lastname"];
+  $productos = "";
+
+  if($cart->total_items() > 0){
+   $cartItems = $cart->contents();
+   foreach($cartItems as $item){
+   $productos = $productos." ".$item["name"];
+   
+   $conect=mysqli_connect("localhost","root","","carta");
+   mysqli_query($conect,"INSERT INTO historial (`id`, `email`, `name`, `lastname`) VALUES ('$email', '$nombre', '$apellido');");
+   }
+   }
+?>
     </tbody>
     <tfoot>
         <tr>
@@ -143,20 +161,3 @@ $custRow = $query->fetch_assoc();
 </body>
 </html>
 
-<?php
-//segun yo esto hace la consulta e ingresa los datos
-	$email = $_SESSION["email"];
-  $nombre = $_SESSION["name"];
-  $apellido= $_SESSION["lastname"];
-  $productos = "";
-
-  if($cart->total_items() > 0){
-   $cartItems = $cart->contents();
-   foreach($cartItems as $item){
-   $productos = $productos." ".$item["name"];
-   
-   $conect=mysqli_connect("localhost","root","","carta");
-   mysqli_query($conect,"INSERT INTO historial (`id`, `email`, `name`, `lastname`) VALUES ('$email', '$nombre', '$apellido');");
-   }
-   }
-?>
