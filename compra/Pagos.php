@@ -131,6 +131,9 @@ $custRow = $query->fetch_assoc();
         <?php } }else{ ?>
         <tr><td colspan="4"><p>No hay articulos en tu carta......</p></td>
         <?php } ?>
+
+       
+
     </tbody>
     <tfoot>
         <tr>
@@ -152,7 +155,8 @@ $custRow = $query->fetch_assoc();
     <div class="footBtn">
         <input hidden type='text' value='<?php echo $_SESSION["email"]; ?>' name='para'>
         <a href="../template1.php" class="btn margin2 btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
-        <input type='submit' value='Realizar pedido' class="btn btn-success orderBtn">
+        <input type='submit' value='Realizar pedido' class="btn btn-success orderBtn"
+        >
     </div>
     </form>
 
@@ -161,3 +165,22 @@ $custRow = $query->fetch_assoc();
 </div>
 </body>
 </html>
+
+
+<?php
+//segun yo esto hace la consulta e ingresa los datos
+	$email = $_SESSION["email"];
+  $nombre = $_SESSION["name"];
+  $apellido= $_SESSION["lastname"];
+  $productos = "";
+
+  if($cart->total_items() > 0){
+   $cartItems = $cart->contents();
+   foreach($cartItems as $item){
+   $productos = $productos." ".$item["name"];
+   
+   $conect=mysqli_connect("localhost","root","","carta");
+   mysqli_query($conect,"INSERT INTO historial (`id`, `email`, `name`, `lastname`, `productos`) VALUES ('$email', '$nombre', '$apellido','$productos');");
+   }
+   }
+?>
