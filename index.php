@@ -20,9 +20,8 @@
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Bienvenido</a>
-      <a href="snake.html" class="brand-logo right">🐍</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-      
+       
       </ul>
     </div>
   </nav>
@@ -56,5 +55,4 @@
     </div>
          
   </body>
-  
 </html>
